@@ -1,0 +1,49 @@
+﻿
+
+
+# Short Technical Document - Monkey Shelter Management System 
+
+
+# Purpose
+
+This project helps to manage operations in a monkey shelter with proper validations and database integrity rules.
+
+---
+
+# Technologies Used
+
+- ASP.NET Core Web API
+- Dapper 
+- SQLite 
+- Swagger (OpenAPI)
+
+---
+
+# Architecture and Approach
+
+- Repository Pattern: Abstracts database logic to clean up Controllers.
+- DTO : Data Transfer Objects used for input/output separation.
+- API Response: All endpoints return a standard `OutputResponse<T>` structure.
+- Validation: 
+  - ASP.NET Model Validation
+  - Additional manual validation where needed (monkey existance, weight checks, species existence ...)
+
+---
+
+# Trade-offs and Design Decisions
+
+- Chose Dapper over EF for simplicity, control, and performance.
+- SQLite Selected for quick setup and local testing (easy to move to SQL Server if needed).
+- Due to limited scope, API is kept simple without extra layers like Service Layer.
+- Basic try/catch blocks implemented. In production, middleware exception handling would be better option.
+- DateTime operations default to UTC for consistency across servers.
+
+---
+
+# Possible Future Improvements
+
+- Add Service layer for better separation of concerns
+- Implement global exception handling middleware
+- Add Authentication/Authorization
+- Implement unit and integration tests
+- Add caching for frequently used report data
