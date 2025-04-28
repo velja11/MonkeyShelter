@@ -19,19 +19,21 @@ Open the solution in Visual Studio
 
 3. Configure the Database
 
-Make sure you have a valid SQLite database.
-The connection string should be defined in appsettings.json:
+SQLite database is created. The db file MonkeyShelter is in Data folder. For better tracking, download Sqlite studio.
+3 IDSpecies are created.
+
+The connection string is defined in appsettings.json:
 
 "ConnectionStrings": {
-  "DefaultConnection": "Data Source=monkey_shelter.db"
+  "DefaultConnection": "Data Source=Data/monkeyShelter.db"
 }
 
 
 4. Install Required Packages
 
-dotnet add package Dapper
-dotnet add package Microsoft.Data.Sqlite
 dotnet restore
+(dotnet add package Dapper)
+(dotnet add package Microsoft.Data.Sqlite)
 
 5. Run the Application
 
