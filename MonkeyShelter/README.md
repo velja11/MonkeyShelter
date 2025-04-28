@@ -8,6 +8,9 @@ Dapper - for fast and simple database access
 
 SQLite - database for easy testing
 
+Console App — for manual interaction with the api
+
+
 Setup Instructions
 1. Clone the Repository
 
@@ -36,10 +39,13 @@ dotnet restore
 (dotnet add package Microsoft.Data.Sqlite)
 
 5. Run the Application
+   MonkeyShelter(Api project)
+   dotnet run
 
-dotnet run
+   MonkeyShelter.DemoApp(console app)
+   dotnet run
 
-6. Swagger (OpenAPI UI) will be available at:
+7. Swagger (OpenAPI UI) will be available at:
 
 
 https://localhost:5001/swagger
@@ -54,6 +60,7 @@ Update last vet check	/api/monkey/{id}/vet-check	PATCH
 Reports - Monkeys per species	/api/report/monkey-count-per-species	GET
 Reports - Arrivals between dates	/api/report/monkey-arrivals-between-dates	GET
 
+The project also includes a Console Application -MonkeyShelter.DemoApp- for manual interaction and testing API
 
 
 
@@ -103,5 +110,22 @@ Responses - Standardized output (success, data, error messages)
  - Monkey weight must be > 0
 
  - Cannot update data for departed monkeys
+
+--ConsoleApp - MonkeyShelter.DemoApp --
+
+
+Features available via Console App:
+
+-View existing monkeys
+
+-Register monkey arrivals
+
+-Register departures
+
+-Update monkey weights
+
+-Perform vet check updates
+
+-View basic reports directly from the console
 
  - Cannot allow the last monkey of a species to depart
