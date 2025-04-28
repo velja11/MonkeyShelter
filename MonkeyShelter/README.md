@@ -47,8 +47,7 @@ dotnet restore
 
 7. Swagger (OpenAPI UI) will be available at:
 
-
-https://localhost:5001/swagger
+https://localhost:7265/swagger
 
 You can use Swagger UI to test the following endpoints:
 
