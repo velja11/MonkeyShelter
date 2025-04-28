@@ -51,13 +51,13 @@ https://localhost:7265/swagger
 
 You can use Swagger UI to test the following endpoints:
 
-Add a monkey	/api/monkey/arrival	POST
-Depart a monkey	/api/monkey/departure/{id}	PATCH
-Update monkey weight	/api/monkey/{id}/weight	PATCH
-Get monkeys for vet checks	/api/monkey/vet-checks	GET
-Update last vet check	/api/monkey/{id}/vet-check	PATCH
-Reports - Monkeys per species	/api/report/monkey-count-per-species	GET
-Reports - Arrivals between dates	/api/report/monkey-arrivals-between-dates	GET
+Add a monkey	/api/Monkey/arrival	POST
+Depart a monkey	/api/Monkey/departure/{id}	PATCH
+Update monkey weight	/api/Monkey/{id}/weight	PATCH
+Get monkeys for vet checks	/api/Monkey/vet-checks	GET
+Update last vet check	/api/Monkey/{id}/vet-check	PATCH
+Reports - Monkeys per species	/api/Report/monkey-count-per-species	GET
+Reports - Arrivals between dates	/api/Report/monkey-arrivals-between-dates	GET
 
 The project also includes a Console Application -MonkeyShelter.DemoApp- for manual interaction and testing API
 
