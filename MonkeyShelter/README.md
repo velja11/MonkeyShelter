@@ -14,7 +14,7 @@ Console App — for manual interaction with the api
 Setup Instructions
 1. Clone the Repository
 
-git clone https://your-repository-link.git
+git clone https://github.com/velja11/MonkeyShelter
 
 2. Open the Project
 
